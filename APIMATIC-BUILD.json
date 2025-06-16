@@ -1,0 +1,220 @@
+{
+  "$schema": "https://titan.apimatic.io/api/build/schema",
+  "buildFileVersion": "1",
+  "generatePortal": {
+    "tailIncludes": "<script defer src='./static/recipes/account-check.js'></script><script>document.addEventListener('DOMContentLoaded', (event) => {APIMaticDevPortal.ready(({ registerWorkflow }) => {registerWorkflow( 'page:api-recipes/account-check', 'Check Account', tinkBalanceWorkflowDefinition); });});</script>",    
+    "contentFolder": "./",
+    "apiSpecPath": "./spec",
+    "apiSpecs": [],
+    "apiMergeSettings": {
+      "type": "Full"
+    },
+    "languageConfig": {
+      "http": {},
+      "csharp": {},
+      "java": {},
+      "php": {},
+      "python": {},
+      "ruby": {},
+      "typescript": {},
+      "go": {}
+    },
+    "portalSettings": {
+      "container": "apimatic-widget",
+      "portalStyle": "default",
+      "apiKey": "xxx",
+      "baseUrl": "./",
+      "enableExport": true,
+      "enableAnalytics": true,
+      "enableConsoleCalls": true,
+      "useProxyForConsoleCalls": true,
+      "languageSettings": {
+        "http_curl_v1": {
+          "sdkDownloadLink": "",
+          "disableSdkDownload": false
+        },
+        "cs_net_standard_lib": {
+          "sdkDownloadLink": "",
+          "disableSdkDownload": false
+        },
+        "java_eclipse_jre_lib": {
+          "sdkDownloadLink": "",
+          "disableSdkDownload": false
+        },
+        "php_generic_lib_v2": {
+          "sdkDownloadLink": "",
+          "disableSdkDownload": false
+        },
+        "python_generic_lib": {
+          "sdkDownloadLink": "",
+          "disableSdkDownload": false
+        },
+        "ruby_generic_lib": {
+          "sdkDownloadLink": "",
+          "disableSdkDownload": false
+        },
+        "ts_generic_lib": {
+          "sdkDownloadLink": "",
+          "disableSdkDownload": false
+        },
+        "go_generic_lib": {
+          "sdkDownloadLink": "",
+          "disableSdkDownload": false
+        }
+      },
+      "allowedExportFormats": [
+        "postman10",
+        "postman20",
+        "openapi31json",
+        "openapi31yaml",
+        "openapi3json",
+        "openapi3yaml",
+        "swagger20",
+        "swaggeryaml",
+        "swagger10",
+        "raml",
+        "raml10",
+        "apiblueprint",
+        "wadl2009",
+        "apimatic",
+        "wsdl",
+        "insomnia",
+        "insomniayaml"
+      ],
+      "theme": {
+        "baseTheme": "standard",
+        "colors": {
+          "primaryColor": {
+            "light": "#062a2f",
+            "dark": "#f79571"
+          },
+          "linkColor": {
+            "light": "#062a2f",
+            "dark": "#fe936f"
+          }
+        },
+        "colorMode": {
+          "defaultMode": "system",
+          "disableSwitch": false
+        },
+        "cssStyles": {
+          "headings": {
+            "fontFamily": "'Rubik', sans-serif",
+            "h1": {
+              "fontFamily": "'Rubik', sans-serif",
+              "fontSize": "27px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            },
+            "h2": {
+              "fontFamily": "'Rubik', sans-serif",
+              "fontSize": "24px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            },
+            "h3": {
+              "fontFamily": "'Rubik', sans-serif",
+              "fontSize": "21.36px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            },
+            "h4": {
+              "fontFamily": "'Rubik', sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            },
+            "h5": {
+              "fontFamily": "'Rubik', sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            },
+            "h6": {
+              "fontFamily": "'Rubik', sans-serif",
+              "fontSize": "15px",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "lineHeight": "1.3"
+            }
+          },
+          "body": {
+            "fontFamily": "'Rubik', sans-serif",
+            "text1": {
+              "fontFamily": "'Rubik', sans-serif",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "text2": {
+              "fontFamily": "'Rubik', sans-serif",
+              "fontSize": "13.33px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "text3": {
+              "fontFamily": "'Rubik', sans-serif",
+              "fontSize": "11.85px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            }
+          },
+          "code": {
+            "fontFamily": "Courier Prime, monospace",
+            "inlineCode": {
+              "fontFamily": "Courier Prime, monospace",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            },
+            "blockCode": {
+              "fontFamily": "Courier Prime, monospace",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "lineHeight": "1.75"
+            }
+          }
+        },
+        "fontSource": [
+          "https://fonts.googleapis.com/css?family='Rubik':100,100i,300,300i,400,400i,500,500i,700,700i,900,900i",
+          "https://fonts.googleapis.com/css?family=Courier+Prime:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        ]
+      },
+      "codegenApiRoutes": {
+        "docsgen": "/static/docs/{template}.json",
+        "codegen": "/static/sdks/{template}.zip",
+        "transform": "/static/exports/{format}.{ext}"
+      },
+      "renameHttpToRest": false
+    },
+    "pageTitle": "Tink API",
+    "navTitle": "Developer Portal",
+    "logoUrl": "https://apimaticio.blob.core.windows.net/images/draft-logos/Tink_Visa_black-c11eed76-a34f-4d3f-a98c-eed0ba07f4f5.png",
+    "logoUrlDark": "https://apimaticio.blob.core.windows.net/images/draft-logos/Tink_Visa_white-ddebc37c-b9d0-4bc2-8763-d5d1026e4bdb.png",
+    "logoLink": "https://docs.tink.com/",
+    "faviconUrl": "https://apimaticio.blob.core.windows.net/images/draft-favicons/Tink_symbol_lax-c4ea7ed7-8f0c-4174-afc7-6cc5a4452171.png",
+    "whiteLabel": false,
+    "useHostedPortalScript": true,
+    "debug": {
+      "publishReport": false,
+      "dumpImportedApi": false,
+      "reportPath": "./apimatic-debug/apimatic-report.html",
+      "importedApiDumpPath": "./apimatic-debug/imported-api-dump.json"
+    }
+  },
+  "apiCopilotConfig": {
+    "key": "76e1a8af-3158-43a7-b112-07ae17a1ac6e",
+    "welcomeMessage": "Welcome to the Tink VISA Developer Portal!",
+    "isEnabled": true
+  }
+}

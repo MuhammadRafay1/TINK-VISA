@@ -1,0 +1,22 @@
+toc:
+- generate: Step by Step Tutorial
+  from: getting-started
+- group: API Recipes
+  items:
+  - page: Account Check recipe
+    file: api-recipes/account-check.md  
+- items:
+  - file: custom_content_1/welcome.md
+    slug: welcome
+    page: Welcome  
+  group: Welcome
+  slug: custom_content_1
+- items: []
+  group: Custom Content 2
+  slug: custom_content_2
+- generate: API Endpoints
+  from: endpoints
+- generate: Models
+  from: models
+- generate: SDK Infrastructure
+  from: sdk-infra
